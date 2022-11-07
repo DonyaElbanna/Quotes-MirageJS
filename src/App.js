@@ -1,21 +1,5 @@
-import logo from "./bjlogo.png";
-import "./App.css";
-
-// function App() {
-//   return (
-//     <div className="App">
-//       <header className="App-header">
-//         <img src={logo} className="App-logo" alt="logo" />
-//         <h1>Random Quote Generator</h1>
-//       </header>
-//     </div>
-//   );
-// }
-
-// export default App;
-
 import React from "react";
-
+import logo from "./bjlogo.png";
 import "./App.css";
 
 class App extends React.Component {
@@ -52,7 +36,7 @@ class App extends React.Component {
             {quote[Math.floor(Math.random() * quote.length)]}
           </p>
         </div>
-        <button onClick={this.getNewQuote}>New Quote</button>
+        <button onClick={this.getNewQuote}></button>
       </div>
     );
   }

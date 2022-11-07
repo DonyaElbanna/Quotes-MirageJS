@@ -47,10 +47,27 @@ button {
   font-size: 17px;
   font-weight: bolder;
   border: none;
+  position: fixed;
+  width: 8%;
+  height: 6%;
+  top: 50%;
+  left: 50%;
+  margin-top: 2%; /* Negative half of height. */
+  margin-left: -6%; /* Negative half of width. */
 }
 
 button:hover {
   background: rgba(22, 22, 22);
   color: #fff;
   cursor: pointer;
+}
+
+button:before {
+  content: "New Quote";
+}
+
+@media screen and (max-width: 992px) {
+  button:before {
+    content: "⟳";
+  }
 }
