@@ -37,6 +37,7 @@ class App extends React.Component {
           </p>
         </div>
         <button onClick={this.getNewQuote}></button>
+        <footer>Made by Donya for fcc © 2022</footer>
       </div>
     );
   }
